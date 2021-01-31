@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <header class="container-fluid">
+
+        
+    </header>
+
+    <!--Booking Section-->
+    <main class="main-content container-fluid row">
+        <div id="apply-form" class="booking-form mt-5  col-10 col-md-7 offset-1">
+            <div class="row container-fluid">
+                <h3 class="text-center">Booking Flights</h3>
+                <label for="start-point" class="offset-1 col-10 col-md-5 p-1">
+                    <p>From:</p>
+                    <input type="text" name="start-point" id="start-point" placeholder="Chittagong,Bangladesh">
+                </label>
+                <label for="end-point" class="offset-1 col-10 col-md-5 p-1">
+                    <p>TO:</p>
+                    <input type="text" name="end-point" id="end-point" placeholder="Dhaka,Bangladesh">
+                </label >
+
+                <select id="select-option"class=" offset-1 col-8 col-md-6 mt-2 mb-4">
+                    <option selected>Trip</option>
+                    <option value="Return">Return</option>
+                    <option value="one-way">One way</option>
+                    <option value="two-way">Two way</option>
+                </select>
+                <label for="depart" class="offset-1 col-10 col-md-5 p-1">
+                    <p>Depart:</p>
+                    <input type="date" name="depart" id="depart">
+                </label >
+                <label for="return" class="offset-1 col-10 col-md-5 p-1">
+                    <p>Return:</p>
+                    <input type="date" name="return" id="return">
+                </label >
+                <label for="economy-ticket" class="offset-1 col-10 col-md-5 p-1">
+                    <p>Economy($100):</p>
+                    <input type="text" name="economy-ticket" id="economy-ticket" placeholder="0" value="0">
+                    <span id="economy-add" class="plus-minus">+</span>
+                    <span id="economy-minus" class="plus-minus">-</span>
+                </label >
+                <label for="business-ticket" class="offset-1 col-10 col-md-5 p-1">
+                    <p>Business($150):</p>
+                    <input type="text" name="business-ticket" id="business-ticket" placeholder="0" value = "0">
+                    <span id="business-add" class="plus-minus">+</span>
+                    <span id="business-minus" class="plus-minus">-</span>
+                </label >
+                <div class="calculation offset-1 col-11 col-md-11 mt-3">
+                    <div class="row">
+                        <div class="col-10 col-md-5">
+                            <p>Subtotal: </p>
+                            <p>10% VAT: </p>
+                            <p>Total:</p>
+                        </div>
+                        <div class="col-10 col-md-6 ml-2 text-end">
+                            <p>$<span id="subtotal">00</span></p>
+                            <p>$<span id="vat">00</span></p>
+                            <p>$<span id="total">00</span></p>  
+                        </div>
+                    </div>
+                </div>
+                <div class=" offset-1 col-8 col-md-8 mt-2">
+                    <button id = "checking-up" class="btn-style ">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="bookings-content" class=" booking-content offset-3 col-9 col-md-6 mt-5 d-flex justify-content-center align-items-center">
+            <div>
+                <h1>discover <br> around the world</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>    
+                <button id="booking-button" >Get Your Ticket</button>
+            </div>
+        </div>
+        <div id="destination-detail" class=" col-12 col-md-12 mt-4">
+            <div class="row details">
+                <div id="start-time" class="common-style col-5 col-md-3"></div>
+                <div id="reach-time" class="common-style col-5 col-md-3"></div>
+                <div id="economy-cost" class="common-style col-5 col-md-3"></div>
+                <div id="business-cost" class="common-style col-5 col-md-3"></div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="booking.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

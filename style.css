@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background:url("images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.booking-form{
+    color:lightblue;
+    display:none;
+    background-color: blue;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px inset blue,
+    -10px -10px 10px inset blue;
+}
+
+.booking-content{
+    color:wheat; 
+}
+
+.booking-content h1{
+    color:purple;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+#select-option{
+    margin-left:9%;
+}
+.plus-minus{
+    color:purple;
+    background:violet;
+    font-size:1.2em;
+    border-radius:50%;
+    padding:5px 8px;
+    border:1px solid blue;
+    display:inline-block;
+}
+
+.calculation{
+    background:blueviolet;
+}
+.btn-style{
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    background-color:  #3352F2;
+}
+
+#booking-button{
+    padding:10px;
+    background:linear-gradient(90deg,lightgray,skyblue);
+    color:purple;
+    border-radius:10px;
+    border:0;
+    box-shadow: 5px 5px 10px gray, -5px -5px 10px gray;
+}
+input{
+    width:95%;
+}
+
+#destination-detail{
+    display:none;
+}
+
+.common-style{
+    min-height: 150px;
+    background:white;
+    color:black;
+    border:1px solid lightgray;
+    box-shadow:8px 8px 14px blue;
+    border-radius:5px;
+}
+
+
